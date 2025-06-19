@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="assets/logo.png" class="logo"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify-Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <style>
+        .logo {
+          height: 50px;  
+          width: 50px;
+          background-color: white;
+          position: absolute;    
+          border-radius: 50%;
+          margin-top: 15px;
+          margin-left: 5px;
+          border: none;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <span>
+      <img src="assets/spotify-logo.png" alt="Logo" class="logo"></span> 
+      <span class="nav-icon"><i class="fa-solid fa-house-user"></i></span>
+      <div class="search-bar">
+        <div class="search-input-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Search for artists, songs, or podcasts">
+        </div>
+      </div>
+     <div class="nav-visit">
+       <span>Premium</span>
+       <span>Support</span>
+        <span>Download</span>
+      </div>
+      <span class="Download-icon">
+        <i class="fa-solid fa-download"></i>
+      </span>
+       <span class="text">
+        <span>Install</span><span>App</span>
+       </span>
+      
+        <span class="nav-signup"><button> Sign up</button></span>
+        <span class="nav-login"><button>Log in</button></span>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <p>Your Library <i class="fa-solid fa-plus"></i></p>
+     </div>
+      <div class="add-card1 card">
+        <h4 style="align-items: center;">Create your first playlist</h4>
+        <p> It's easy we'll help you</p>
+        <button>Create playlist</button>
+    </div>
+    <div class="add-card2 card">
+      <h4 style="align-items: center;">Let's find some podcast to Follow</h4>
+      <p>We'll keep you update  new episodes</p>
+      <button>Browser podcast</button>
+  </div>
+<button class="lang"> <i class="fa-solid fa-globe"></i> English</button>
+<span class="line"></span>
+<div class="play-card">
+  <img src="assets/card1.jpeg" alt="Sample Image">
+  <marquee behavior="scroll" direction="left">Aashayein | <span>KK,Salim Merchant</span></marquee>
+</div>
+
+<div class="play-card1">
+
+  <img src="assets/player_icon2 (1).png" height="20px"  alt="Sample Image">
+  <img src="assets/player_icon3.png" height="20px"  alt="Sample Image">
+  <img src="assets/player_icon4.png" height="20px"  alt="Sample Image">
+</div>
+</div>
+<hr/>
+
+<br/>
+
+    <div class="main-content">
+      <div class="content-header">
+        <div class="music-container">
+          <button class="scroll-btn left" Onclick="scrollLeft()">&#10094;</button>
+          <button class="scroll-btn right" Onclick="scrollRight()">&#10095;</button>
+      
+          <div class="music-section" id="musicScroll">
+            <!-- Music Cards -->
+            <div class="music-card"><img src="assets/card1.jpeg"><h3>Aashayein</h3><p>KK,Salim Merchant</p></div>
+            <div class="music-card"><img src="assets/card2.jpg" ><h3>Gilehriyaan</h3><p>Pritam,Jonita Gandhi</p></div>
+            <div class="music-card"><img src="assets/card3.jpeg" height="50px" width="50px" ><h3>Bandeya</h3><p>Arjit Singh</p></div>
+            <div class="music-card"><img src="assets/card4.jpg"><h3>Kar Har Maidan Fateh</h3><p>Sukhwindar Singh</p></div>
+            <div class="music-card"><img src="assets/card5.jpg"><h3>Ae Watan</h3><p>Sunidhi Chauhan</p></div>
+            <div class="music-card"><img src="assets/card6.jpg" height="50px" width="50px"><h3>Chak de India</h3><p>Salim,Sukhwindar singh</p></div>
+            <div class="music-card"><img src="assets/card7.jpg"><h3>Zinda</h3><p>Shankar-Ehsaan-loy</p></div>
+            <div class="music-card"><img src="assets/card8.jpg"><h3>Badal Pe Paon hai</h3><p>Salim-Sulaiman</p></div>
+            <div class="music-card"><img src="assets/card9.webp"><h3>Arambh Hai Prachand</h3><p>Piyush Mishra</p></div>
+            <div class="music-card"><img src="assets/card10.jpg"><h3>Namo Namo/h3><p>Amit Trivedi</p></div>
+            <div class="music-card"><img src="assets/card11.jpeg"><h3>Qaafirana</h3><p>Amit Trivedi, Arjit singh</p></div>
+            <div class="music-card"><img src="assets/card12.jpg"><h3>Bulleya</h3><p>Vishal-Shankar</p></div>
+            <div class="music-card"><img src="assets/card13.webp"><h3>Main Rahoon Ya Na Rahoon</h3><p>Amaal Malik</p></div>
+            <div class="music-card"><img src="assets/card14.jpg"><h3>Kaun Tujhe</h3><p>Palak Muchhal,Amaal Malik</p></div>
+            <div class="music-card"><img src="assets/card15.png"><h3>Bahara</h3><p>Vishal-Shekhar</p></div>
+          </div>
+        </div>
+        <h2 style="margin-left: 20px;">Popolar Artists</h2>
+        <div class="music-section">
+        <div class="artist-img"> <img src="assets/img1.jpeg" class="img"><h3>Pritam</h3></div>
+        <div class="artist-img"> <img src="assets/img2.jpeg" class="img"><h3>Arjit Singh</h3></div>
+        <div class="artist-img"> <img src="assets/img3.jpeg" class="img"><h3>A.R. Rahman</h3></div>
+        <div class="artist-img">  <img src="assets/img8.jpeg" class="img"><h3>Palak Muchhal</h3></div>
+        <div class="artist-img"> <img src="assets/img5.jpeg" class="img"><h3>Atif Aslam</h3></div>
+        <div class="artist-img"> <img src="assets/img6.jpeg" class="img"><h3>Amit Trivedi</h3></div>
+        <div class="artist-img"> <img src="assets/img7.jpeg" class="img"><h3>Sachet-Parampara</h3></div>
+        <div class="artist-img"> <img src="assets/img4.jpeg" class="img"><h3>Vishal-Shankar</h3></div>
+      </div>
+      </div>
+      </div>
+      
+    <script src="app.js"></script>
+</body>
+</html>
